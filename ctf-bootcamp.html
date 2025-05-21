@@ -5,143 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CTF Bootcamp | GhostHacker</title>
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #0b0b0b;
+      color: #f4f4f4;
+      padding: 0 20px;
+    }
+    header {
+      background-color: #111;
+      border-bottom: 2px solid red;
+      padding: 20px;
+    }
+    header h1 {
+      color: red;
+      margin: 0;
+    }
+    nav a {
+      color: #00bfff;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    h2 {
+      color: #ff5555;
+    }
+    section {
+      margin-top: 30px;
+    }
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>GhostHacker</h1>
-  <p><i>"A bug is not a mistake, it is a problem that makes you think and become who you are" – Joe M.</i></p>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="web-security.html">Web Security</a>
-    <a href="ctf-bootcamp.html">CTF Bootcamp</a>
-    <a href="network-pentest.html">Network Pentest</a>
-  </nav>
-</header>
+  <header>
+    <h1>GhostHacker</h1>
+    <p><i>"A bug is not a mistake, it is a problem that makes you think and become who you are" – Joe M.</i></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="web-security.html">Web Security</a>
+      <a href="ctf-bootcamp.html">CTF Bootcamp</a>
+      <a href="network-pentest.html">Network Pentest</a>
+    </nav>
+  </header>
 
-<main>
+  <section>
+    <h2>Capture The Flag (CTF) Bootcamp</h2>
+    <p>CTFs are cybersecurity competitions that simulate real-world vulnerabilities. This bootcamp will take you from beginner to confident player by teaching you the fundamentals through hands-on labs.</p>
+  </section>
 
-<section>
-  <h2>CTF Bootcamp Overview</h2>
-  <p>Capture The Flag (CTF) games are cybersecurity competitions where you solve puzzles to "capture" flags. These puzzles cover real-world skills like web hacking, forensics, crypto, and more.</p>
-</section>
+  <section>
+    <h2>Lesson 1: Introduction to CTFs</h2>
+    <ul>
+      <li><b>What is a CTF?</b> - A Capture The Flag challenge is a cybersecurity exercise where participants exploit systems to find "flags" (secret codes).</li>
+      <li><b>CTF Types:</b> Jeopardy (puzzle-based), Attack-Defense, and King of the Hill.</li>
+      <li><b>Flag formats:</b> Usually look like <code>flag{something_hidden_here}</code>.</li>
+      <li><b>Why play CTFs?</b> They build skills in web security, cryptography, reverse engineering, forensics, and more.</li>
+    </ul>
+  </section>
 
-<!-- LESSON 1 -->
-<section>
-  <h2>Lesson 1: CTF Basics</h2>
-  <h3>🔍 Theory</h3>
-  <ul>
-    <li>Types of CTFs: Jeopardy vs Attack-Defense</li>
-    <li>Categories: Web, Crypto, Forensics, Pwn, Misc</li>
-    <li>How scoring and flags work (e.g., flag{example})</li>
-  </ul>
+  <section>
+    <h2>Lesson 2: CTF Categories Explained</h2>
+    <ul>
+      <li><b>Web Exploitation:</b> Bypass input forms, exploit parameters, or abuse cookies.</li>
+      <li><b>Reverse Engineering:</b> Analyze programs and binaries to find logic or hidden functions.</li>
+      <li><b>Forensics:</b> Analyze files, logs, or memory dumps to extract information.</li>
+      <li><b>Cryptography:</b> Decode encrypted data using known weaknesses.</li>
+      <li><b>Steganography:</b> Find data hidden inside images, files, or media.</li>
+    </ul>
+  </section>
 
-  <h3>🛠️ Hands-On Labs</h3>
-  <ul>
-    <li><a href="https://tryhackme.com/room/introtoctf" target="_blank">TryHackMe: Intro to CTF</a></li>
-    <li><a href="https://picoctf.org" target="_blank">picoCTF Challenges</a></li>
-  </ul>
+  <section>
+    <h2>Lesson 3: Must-Have Tools</h2>
+    <ul>
+      <li><b>Burp Suite:</b> Intercept and modify web traffic.</li>
+      <li><b>CyberChef:</b> Perform encoding, decoding, and data transformations.</li>
+      <li><b>Ghidra:</b> Reverse engineering software by the NSA.</li>
+      <li><b>Wireshark:</b> Network packet analyzer.</li>
+      <li><b>Binwalk:</b> Extract data from firmware and binary files.</li>
+      <li><b>zsteg, steghide:</b> For steganography detection.</li>
+    </ul>
+  </section>
 
-  <h3>⚙️ Tools</h3>
-  <ul>
-    <li>CTFtime.org (track events)</li>
-    <li>CyberChef</li>
-  </ul>
-</section>
+  <section>
+    <h2>Lesson 4: Hands-On Labs</h2>
+    <ul>
+      <li><b><a href="https://tryhackme.com/room/introtoctf" target="_blank">TryHackMe - Intro to CTF</a></b>: Start here if you're new to CTFs.</li>
+      <li><b><a href="https://picoctf.org" target="_blank">PicoCTF</a></b>: A free platform by Carnegie Mellon University for learning CTFs.</li>
+      <li><b><a href="https://ctflearn.com" target="_blank">CTFLearn</a></b>: Beginner-friendly with categorized challenges.</li>
+      <li><b><a href="https://hackthebox.com" target="_blank">Hack The Box</a></b>: Realistic challenges including CTF-like boxes.</li>
+    </ul>
+  </section>
 
-<!-- LESSON 2 -->
-<section>
-  <h2>Lesson 2: Web CTFs</h2>
-  <h3>🔍 Theory</h3>
-  <ul>
-    <li>Common bugs: XSS, SQLi, Insecure Auth</li>
-    <li>How to intercept and modify web traffic</li>
-  </ul>
+  <section>
+    <h2>Lesson 5: Tips for Solving Challenges</h2>
+    <ul>
+      <li>Always view page source — flags and clues often hide there.</li>
+      <li>Use <code>strings</code> and <code>binwalk</code> on unknown files.</li>
+      <li>Try various encodings: Base64, hex, binary, ROT13, etc.</li>
+      <li>Don’t guess the flag — read clues and use logic!</li>
+      <li>Keep notes as you solve — it helps with write-ups and learning.</li>
+    </ul>
+  </section>
 
-  <h3>🛠️ Labs</h3>
-  <ul>
-    <li><a href="https://tryhackme.com/room/basicpentestingjt" target="_blank">TryHackMe: Basic Pentesting</a></li>
-    <li><a href="https://portswigger.net/web-security/all-labs" target="_blank">PortSwigger CTF Labs</a></li>
-  </ul>
+  <section>
+    <h2>Bonus Resources</h2>
+    <ul>
+      <li><a href="https://ctftime.org" target="_blank">CTFTime.org</a> – Track live CTF events globally</li>
+      <li><a href="https://trailofbits.github.io/ctf/" target="_blank">CTF Field Guide</a> – By Trail of Bits</li>
+      <li><a href="https://github.com/apsdehal/awesome-ctf" target="_blank">Awesome CTF List</a> – GitHub curated list</li>
+    </ul>
+  </section>
 
-  <h3>⚙️ Tools</h3>
-  <ul>
-    <li>Burp Suite</li>
-    <li>Firefox Dev Tools</li>
-  </ul>
-</section>
-
-<!-- LESSON 3 -->
-<section>
-  <h2>Lesson 3: Cryptography Challenges</h2>
-  <h3>🔍 Theory</h3>
-  <ul>
-    <li>Common encodings (Base64, hex)</li>
-    <li>Classical ciphers: Caesar, Vigenère</li>
-    <li>Modern crypto: RSA, hashing</li>
-  </ul>
-
-  <h3>🛠️ Labs</h3>
-  <ul>
-    <li><a href="https://cryptohack.org" target="_blank">CryptoHack.org</a></li>
-    <li>Crack classical ciphers using CyberChef</li>
-  </ul>
-
-  <h3>⚙️ Tools</h3>
-  <ul>
-    <li>CyberChef</li>
-    <li>Python scripts</li>
-  </ul>
-</section>
-
-<!-- LESSON 4 -->
-<section>
-  <h2>Lesson 4: Forensics Challenges</h2>
-  <h3>🔍 Theory</h3>
-  <ul>
-    <li>Metadata analysis (images, documents)</li>
-    <li>PCAP and memory forensics</li>
-    <li>File carving and steganography</li>
-  </ul>
-
-  <h3>🛠️ Labs</h3>
-  <ul>
-    <li><a href="https://tryhackme.com/room/memorywalkthrough" target="_blank">THM: Memory Forensics</a></li>
-    <li><a href="https://crackmes.one/" target="_blank">CrackMe Forensics</a></li>
-  </ul>
-
-  <h3>⚙️ Tools</h3>
-  <ul>
-    <li>binwalk</li>
-    <li>Volatility</li>
-    <li>ExifTool</li>
-  </ul>
-</section>
-
-<!-- LESSON 5 -->
-<section>
-  <h2>Lesson 5: CTF Mindset & Strategy</h2>
-  <h3>Tips for Success:</h3>
-  <ul>
-    <li>Take notes during every challenge</li>
-    <li>Learn how to Google effectively</li>
-    <li>Join a team — collaboration helps</li>
-    <li>Practice on live platforms often</li>
-  </ul>
-
-  <h3>Best Practice Platforms:</h3>
-  <ul>
-    <li><a href="https://tryhackme.com" target="_blank">TryHackMe</a></li>
-    <li><a href="https://hackthebox.com" target="_blank">HackTheBox</a></li>
-    <li><a href="https://root-me.org" target="_blank">RootMe</a></li>
-  </ul>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2025 GhostHacker | Learn. Hack. Secure.</p>
-</footer>
+  <footer>
+    © 2025 GhostHacker | Learn. Hack. Secure.
+  </footer>
 
 </body>
 </html>
