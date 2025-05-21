@@ -1,86 +1,114 @@
-/* General Reset */
-body {
+/* Global Reset */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  transition: background 0.3s, color 0.3s;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.theme-dark {
+/* Base Theme (Dark + Red) */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0d0d0d;
   color: #f5f5f5;
+  line-height: 1.6;
+  padding: 0;
 }
 
+/* Header */
 header {
   background: #111;
   padding: 20px;
   border-bottom: 2px solid red;
   text-align: center;
 }
-
-h1 {
+header h1 {
   color: red;
-  margin: 0;
+  font-size: 2.5em;
 }
-
 .tagline {
   font-style: italic;
-  color: #ccc;
-  font-size: 0.9rem;
+  color: #bbb;
+  margin: 10px 0;
 }
 
+/* Navigation */
 nav {
-  margin-top: 10px;
+  margin-top: 15px;
 }
-
 nav a {
-  margin: 0 10px;
   color: #00bfff;
   text-decoration: none;
+  margin: 0 10px;
   font-weight: bold;
+  transition: color 0.3s;
 }
-
 nav a:hover {
-  text-decoration: underline;
+  color: red;
 }
 
-main {
-  padding: 20px;
-}
-
-h2, h3 {
-  color: #ff5555;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-footer {
+/* Hero Section */
+.hero {
+  padding: 40px 20px;
   text-align: center;
-  padding: 20px;
-  background: #111;
-  color: #999;
-  font-size: 0.9rem;
+  background: #1a1a1a;
+}
+.hero h2 {
+  font-size: 2em;
+  color: #ff5555;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2em;
+  color: #ccc;
 }
 
-/* Responsive Design */
+/* Course Grid */
+.courses {
+  padding: 40px 20px;
+}
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.course-card {
+  background: #222;
+  padding: 20px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.course-card h3 a {
+  color: #00bfff;
+  text-decoration: none;
+}
+.course-card p {
+  color: #ccc;
+  margin-top: 10px;
+}
+.course-card:hover {
+  transform: translateY(-5px);
+  border-color: red;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  color: #888;
+}
+
+/* Mobile Responsive */
 @media screen and (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 5px 0;
+  .course-grid {
+    flex-direction: column;
+    align-items: center;
   }
-
-  header, main {
-    padding: 15px;
-  }
-
-  .courses ul {
-    padding-left: 0;
-  }
-
-  .courses li {
-    list-style: none;
-    margin: 10px 0;
+  .course-card {
+    width: 90%;
   }
 }
