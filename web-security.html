@@ -6,83 +6,144 @@
   <title>Web Security | GhostHacker</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="theme-dark">
-  <header>
-    <h1>GhostHacker</h1>
-    <p class="tagline">"A bug is not a mistake, it is a problem that makes you think and become who you are." — Joe M.</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="web-security.html">Web Security</a>
-      <a href="ctf-bootcamp.html">CTF Bootcamp</a>
-      <a href="network-pentest.html">Network Pentest</a>
-    </nav>
-  </header>
+<body>
 
-  <main>
-    <h2>Introduction to Web Security</h2>
-    <p>Learn to secure web applications by understanding common vulnerabilities and how attackers exploit them.</p>
+<header>
+  <h1>GhostHacker</h1>
+  <p><i>"A bug is not a mistake, it is a problem that makes you think and become who you are" – Joe M.</i></p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="web-security.html">Web Security</a>
+    <a href="ctf-bootcamp.html">CTF Bootcamp</a>
+    <a href="network-pentest.html">Network Pentest</a>
+  </nav>
+</header>
 
-    <section>
-      <h3>Lesson 1: HTTP Basics</h3>
-      <ul>
-        <li>Request/Response cycle</li>
-        <li>HTTP Methods: GET, POST, PUT, DELETE</li>
-        <li>Status codes and headers</li>
-      </ul>
-    </section>
+<main>
 
-    <section>
-      <h3>Lesson 2: Vulnerabilities</h3>
-      <ul>
-        <li>XSS (Cross-site scripting)</li>
-        <li>SQL Injection</li>
-        <li>CSRF</li>
-        <li>Directory traversal</li>
-        <li>File upload flaws</li>
-      </ul>
-    </section>
+<section>
+  <h2>Introduction to Web Security</h2>
+  <p>Web Security is the practice of protecting web applications from cyber threats and attacks. This course covers how the web works, vulnerabilities, exploitation, and how to defend systems.</p>
+</section>
 
-    <section>
-      <h3>Lesson 3: Labs & Practice</h3>
-      <ul>
-        <li>TryHackMe: Web Fundamentals</li>
-        <li>PortSwigger Labs (Burp Academy)</li>
-        <li>HackTheBox Web Challenges</li>
-      </ul>
-    </section>
+<!-- LESSON 1 -->
+<section>
+  <h2>Lesson 1: HTTP Basics</h2>
+  <p>HTTP is the protocol used by all web applications. Understanding how it works is key to understanding how to hack and defend them.</p>
 
-    <section>
-      <h3>Lesson 4: Defense</h3>
-      <ul>
-        <li>Input sanitization & validation</li>
-        <li>Prepared statements</li>
-        <li>Security headers</li>
-        <li>Logging and monitoring</li>
-      </ul>
-    </section>
+  <h3>🔍 Theory</h3>
+  <ul>
+    <li>Request Methods: GET, POST, PUT, DELETE</li>
+    <li>Status Codes: 200 OK, 404 Not Found, 500 Internal Server Error</li>
+    <li>Headers: Authorization, Cookie, Content-Type</li>
+  </ul>
 
-    <section>
-      <h3>Lesson 5: Tools</h3>
-      <ul>
-        <li>Burp Suite</li>
-        <li>OWASP ZAP</li>
-        <li>Postman</li>
-        <li>Browser DevTools</li>
-      </ul>
-    </section>
+  <h3>🛠️ Hands-On Lab</h3>
+  <ul>
+    <li><a href="https://tryhackme.com/room/httpinyoudetail" target="_blank">TryHackMe: HTTP In Detail</a></li>
+    <li>Use browser dev tools (F12) to inspect HTTP requests/responses</li>
+  </ul>
 
-    <section>
-      <h3>Bonus Resources</h3>
-      <ul>
-        <li><a href="https://owasp.org" target="_blank">OWASP Top 10</a></li>
-        <li><a href="https://portswigger.net/web-security" target="_blank">Burp Suite Academy</a></li>
-        <li><a href="https://tryhackme.com/path/outline/web-fundamentals" target="_blank">TryHackMe Web Path</a></li>
-      </ul>
-    </section>
-  </main>
+  <h3>⚙️ Tools</h3>
+  <ul>
+    <li>Postman</li>
+    <li>Browser DevTools</li>
+  </ul>
+</section>
 
-  <footer>
-    © 2025 GhostHacker | Learn. Hack. Secure.
-  </footer>
+<!-- LESSON 2 -->
+<section>
+  <h2>Lesson 2: Common Web Vulnerabilities</h2>
+
+  <h3>🔍 Theory</h3>
+  <ul>
+    <li><strong>XSS:</strong> Malicious scripts injected into pages</li>
+    <li><strong>SQL Injection:</strong> Database manipulation via input fields</li>
+    <li><strong>CSRF:</strong> Trick users into performing unwanted actions</li>
+    <li><strong>Directory Traversal:</strong> Access restricted files</li>
+    <li><strong>File Upload:</strong> Exploit via malicious file uploads</li>
+  </ul>
+
+  <h3>🛠️ Hands-On Labs</h3>
+  <ul>
+    <li><a href="https://portswigger.net/web-security" target="_blank">PortSwigger Academy Labs</a></li>
+    <li><a href="https://tryhackme.com/path/outline/web-fundamentals" target="_blank">TryHackMe: Web Fundamentals</a></li>
+    <li>Practice on <a href="https://owasp.org/www-project-juice-shop/" target="_blank">OWASP Juice Shop</a></li>
+  </ul>
+
+  <h3>⚙️ Tools</h3>
+  <ul>
+    <li>Burp Suite</li>
+    <li>OWASP ZAP</li>
+    <li>SQLMap</li>
+  </ul>
+</section>
+
+<!-- LESSON 3 -->
+<section>
+  <h2>Lesson 3: Hands-on Labs</h2>
+  <p>Apply what you’ve learned in real-world scenarios.</p>
+
+  <ul>
+    <li><strong>TryHackMe:</strong> <a href="https://tryhackme.com/path/outline/web-fundamentals" target="_blank">Web Path</a></li>
+    <li><strong>PortSwigger Labs:</strong> Interactive web exploitation tutorials</li>
+    <li><strong>HackTheBox:</strong> Web exploitation challenges (easy to hard)</li>
+  </ul>
+
+  <p>Tip: Track your progress and keep notes. Hands-on practice builds muscle memory!</p>
+</section>
+
+<!-- LESSON 4 -->
+<section>
+  <h2>Lesson 4: Prevention & Mitigation</h2>
+
+  <h3>🔍 Theory</h3>
+  <ul>
+    <li>Validate and sanitize user input</li>
+    <li>Use security headers: CSP, HSTS, X-Content-Type-Options</li>
+    <li>Use HTTPS with secure cookies</li>
+    <li>Least privilege for users and files</li>
+  </ul>
+
+  <h3>🛠️ Practice</h3>
+  <ul>
+    <li>Secure a sample app using headers</li>
+    <li>Fix insecure login forms in a lab</li>
+  </ul>
+
+  <h3>⚙️ Tools</h3>
+  <ul>
+    <li>Helmet.js (for Express apps)</li>
+    <li>OWASP Cheat Sheets</li>
+  </ul>
+</section>
+
+<!-- LESSON 5 -->
+<section>
+  <h2>Lesson 5: Tools You’ll Use</h2>
+  <ul>
+    <li><strong>Burp Suite:</strong> Web proxy to intercept and test traffic</li>
+    <li><strong>OWASP ZAP:</strong> Open-source vulnerability scanner</li>
+    <li><strong>Postman:</strong> API testing and HTTP requests</li>
+    <li><strong>Browser DevTools:</strong> Inspect page structure, cookies, and JS</li>
+  </ul>
+</section>
+
+<!-- BONUS -->
+<section>
+  <h2>Bonus Resources</h2>
+  <ul>
+    <li><a href="https://owasp.org" target="_blank">OWASP Top 10</a></li>
+    <li><a href="https://portswigger.net/web-security" target="_blank">Burp Suite Academy</a></li>
+    <li><a href="https://tryhackme.com/path/outline/web-fundamentals" target="_blank">TryHackMe Web Path</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2025 GhostHacker | Learn. Hack. Secure.</p>
+</footer>
+
 </body>
 </html>
