@@ -6,51 +6,142 @@
   <title>CTF Bootcamp | GhostHacker</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="theme-dark">
-  <header>
-    <h1>GhostHacker</h1>
-    <p class="tagline">"A bug is not a mistake, it is a problem that makes you think and become who you are." — Joe M.</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="web-security.html">Web Security</a>
-      <a href="ctf-bootcamp.html">CTF Bootcamp</a>
-      <a href="network-pentest.html">Network Pentest</a>
-    </nav>
-  </header>
+<body>
 
-  <main>
-    <h2>CTF Bootcamp</h2>
-    <p>Learn to solve Capture The Flag challenges and think like a hacker.</p>
+<header>
+  <h1>GhostHacker</h1>
+  <p><i>"A bug is not a mistake, it is a problem that makes you think and become who you are" – Joe M.</i></p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="web-security.html">Web Security</a>
+    <a href="ctf-bootcamp.html">CTF Bootcamp</a>
+    <a href="network-pentest.html">Network Pentest</a>
+  </nav>
+</header>
 
-    <section>
-      <h3>Lesson 1: CTF Basics</h3>
-      <ul>
-        <li>What is a CTF?</li>
-        <li>Types: Jeopardy vs Attack-Defense</li>
-        <li>Common categories: Web, Crypto, Forensics</li>
-      </ul>
-    </section>
+<main>
 
-    <section>
-      <h3>Lesson 2: Tools & Techniques</h3>
-      <ul>
-        <li>CyberChef, Burp Suite, Ghidra</li>
-        <li>Wireshark, strings, steg tools</li>
-      </ul>
-    </section>
+<section>
+  <h2>CTF Bootcamp Overview</h2>
+  <p>Capture The Flag (CTF) games are cybersecurity competitions where you solve puzzles to "capture" flags. These puzzles cover real-world skills like web hacking, forensics, crypto, and more.</p>
+</section>
 
-    <section>
-      <h3>Lesson 3: Practice</h3>
-      <ul>
-        <li>TryHackMe: Intro to CTF</li>
-        <li>OverTheWire: Bandit</li>
-        <li>HackTheBox Starting Point</li>
-      </ul>
-    </section>
-  </main>
+<!-- LESSON 1 -->
+<section>
+  <h2>Lesson 1: CTF Basics</h2>
+  <h3>🔍 Theory</h3>
+  <ul>
+    <li>Types of CTFs: Jeopardy vs Attack-Defense</li>
+    <li>Categories: Web, Crypto, Forensics, Pwn, Misc</li>
+    <li>How scoring and flags work (e.g., flag{example})</li>
+  </ul>
 
-  <footer>
-    © 2025 GhostHacker | Learn. Hack. Secure.
-  </footer>
+  <h3>🛠️ Hands-On Labs</h3>
+  <ul>
+    <li><a href="https://tryhackme.com/room/introtoctf" target="_blank">TryHackMe: Intro to CTF</a></li>
+    <li><a href="https://picoctf.org" target="_blank">picoCTF Challenges</a></li>
+  </ul>
+
+  <h3>⚙️ Tools</h3>
+  <ul>
+    <li>CTFtime.org (track events)</li>
+    <li>CyberChef</li>
+  </ul>
+</section>
+
+<!-- LESSON 2 -->
+<section>
+  <h2>Lesson 2: Web CTFs</h2>
+  <h3>🔍 Theory</h3>
+  <ul>
+    <li>Common bugs: XSS, SQLi, Insecure Auth</li>
+    <li>How to intercept and modify web traffic</li>
+  </ul>
+
+  <h3>🛠️ Labs</h3>
+  <ul>
+    <li><a href="https://tryhackme.com/room/basicpentestingjt" target="_blank">TryHackMe: Basic Pentesting</a></li>
+    <li><a href="https://portswigger.net/web-security/all-labs" target="_blank">PortSwigger CTF Labs</a></li>
+  </ul>
+
+  <h3>⚙️ Tools</h3>
+  <ul>
+    <li>Burp Suite</li>
+    <li>Firefox Dev Tools</li>
+  </ul>
+</section>
+
+<!-- LESSON 3 -->
+<section>
+  <h2>Lesson 3: Cryptography Challenges</h2>
+  <h3>🔍 Theory</h3>
+  <ul>
+    <li>Common encodings (Base64, hex)</li>
+    <li>Classical ciphers: Caesar, Vigenère</li>
+    <li>Modern crypto: RSA, hashing</li>
+  </ul>
+
+  <h3>🛠️ Labs</h3>
+  <ul>
+    <li><a href="https://cryptohack.org" target="_blank">CryptoHack.org</a></li>
+    <li>Crack classical ciphers using CyberChef</li>
+  </ul>
+
+  <h3>⚙️ Tools</h3>
+  <ul>
+    <li>CyberChef</li>
+    <li>Python scripts</li>
+  </ul>
+</section>
+
+<!-- LESSON 4 -->
+<section>
+  <h2>Lesson 4: Forensics Challenges</h2>
+  <h3>🔍 Theory</h3>
+  <ul>
+    <li>Metadata analysis (images, documents)</li>
+    <li>PCAP and memory forensics</li>
+    <li>File carving and steganography</li>
+  </ul>
+
+  <h3>🛠️ Labs</h3>
+  <ul>
+    <li><a href="https://tryhackme.com/room/memorywalkthrough" target="_blank">THM: Memory Forensics</a></li>
+    <li><a href="https://crackmes.one/" target="_blank">CrackMe Forensics</a></li>
+  </ul>
+
+  <h3>⚙️ Tools</h3>
+  <ul>
+    <li>binwalk</li>
+    <li>Volatility</li>
+    <li>ExifTool</li>
+  </ul>
+</section>
+
+<!-- LESSON 5 -->
+<section>
+  <h2>Lesson 5: CTF Mindset & Strategy</h2>
+  <h3>Tips for Success:</h3>
+  <ul>
+    <li>Take notes during every challenge</li>
+    <li>Learn how to Google effectively</li>
+    <li>Join a team — collaboration helps</li>
+    <li>Practice on live platforms often</li>
+  </ul>
+
+  <h3>Best Practice Platforms:</h3>
+  <ul>
+    <li><a href="https://tryhackme.com" target="_blank">TryHackMe</a></li>
+    <li><a href="https://hackthebox.com" target="_blank">HackTheBox</a></li>
+    <li><a href="https://root-me.org" target="_blank">RootMe</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2025 GhostHacker | Learn. Hack. Secure.</p>
+</footer>
+
 </body>
 </html>
