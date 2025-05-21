@@ -4,146 +4,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Web Security | GhostHacker</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <h1>GhostHacker</h1>
-  <p><i>"A bug is not a mistake, it is a problem that makes you think and become who you are" – Joe M.</i></p>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="web-security.html">Web Security</a>
-    <a href="ctf-bootcamp.html">CTF Bootcamp</a>
-    <a href="network-pentest.html">Network Pentest</a>
-  </nav>
-</header>
+  <header>
+    <h1>GhostHacker</h1>
+    <p class="tagline">"A bug is not a mistake, it is a problem that makes you think and become who you are" – Joe M.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="web-security.html">Web Security</a>
+      <a href="ctf-bootcamp.html">CTF Bootcamp</a>
+      <a href="network-pentest.html">Network Pentest</a>
+    </nav>
+  </header>
 
-<main>
+  <main class="content">
+    <section>
+      <h2>Web Security: Full Course</h2>
+      <p>This course teaches you how web applications work, what common vulnerabilities they have, and how to ethically hack and protect them.</p>
+    </section>
 
-<section>
-  <h2>Introduction to Web Security</h2>
-  <p>Web Security is the practice of protecting web applications from cyber threats and attacks. This course covers how the web works, vulnerabilities, exploitation, and how to defend systems.</p>
-</section>
+    <section>
+      <h2>Lesson 1: How the Web Works</h2>
+      <p><strong>Topics Covered:</strong></p>
+      <ul>
+        <li>Client-server model and HTTP</li>
+        <li>DNS, IPs, and ports</li>
+        <li>GET vs POST and status codes</li>
+        <li>Cookies and sessions</li>
+      </ul>
+      <p><strong>Lab:</strong> Use your browser DevTools to inspect requests, cookies, and headers on <a href="https://httpbin.org" target="_blank">httpbin.org</a>.</p>
+    </section>
 
-<!-- LESSON 1 -->
-<section>
-  <h2>Lesson 1: HTTP Basics</h2>
-  <p>HTTP is the protocol used by all web applications. Understanding how it works is key to understanding how to hack and defend them.</p>
+    <section>
+      <h2>Lesson 2: Common Web Vulnerabilities</h2>
+      <ul>
+        <li><strong>XSS (Cross-Site Scripting):</strong> Injecting JavaScript into web pages.</li>
+        <li><strong>SQL Injection:</strong> Breaking database queries via input fields.</li>
+        <li><strong>CSRF:</strong> Performing actions as a logged-in user.</li>
+        <li><strong>File Upload Attacks:</strong> Uploading malicious files.</li>
+        <li><strong>Directory Traversal:</strong> Accessing restricted system files.</li>
+      </ul>
+      <p><strong>Lab:</strong> TryHackMe: <a href="https://tryhackme.com/room/webfundamentals" target="_blank">Web Fundamentals Room</a></p>
+    </section>
 
-  <h3>🔍 Theory</h3>
-  <ul>
-    <li>Request Methods: GET, POST, PUT, DELETE</li>
-    <li>Status Codes: 200 OK, 404 Not Found, 500 Internal Server Error</li>
-    <li>Headers: Authorization, Cookie, Content-Type</li>
-  </ul>
+    <section>
+      <h2>Lesson 3: Exploiting Vulnerabilities</h2>
+      <ul>
+        <li>Using Burp Suite to capture & manipulate requests</li>
+        <li>Writing XSS payloads</li>
+        <li>Exploiting SQLi using `' OR 1=1--`</li>
+        <li>CSRF attack simulation using hidden forms</li>
+      </ul>
+      <p><strong>Hands-On:</strong> Use <a href="https://portswigger.net/web-security" target="_blank">Burp Suite Academy</a> for practical labs.</p>
+    </section>
 
-  <h3>🛠️ Hands-On Lab</h3>
-  <ul>
-    <li><a href="https://tryhackme.com/room/httpinyoudetail" target="_blank">TryHackMe: HTTP In Detail</a></li>
-    <li>Use browser dev tools (F12) to inspect HTTP requests/responses</li>
-  </ul>
+    <section>
+      <h2>Lesson 4: Securing Applications</h2>
+      <ul>
+        <li>Input validation and output encoding</li>
+        <li>Using security headers (CSP, X-Frame-Options, etc.)</li>
+        <li>Prepared statements to stop SQLi</li>
+        <li>Anti-CSRF tokens and secure cookies</li>
+      </ul>
+      <p><strong>Challenge:</strong> Review an insecure form and secure it properly.</p>
+    </section>
 
-  <h3>⚙️ Tools</h3>
-  <ul>
-    <li>Postman</li>
-    <li>Browser DevTools</li>
-  </ul>
-</section>
+    <section>
+      <h2>Lesson 5: Tools of the Trade</h2>
+      <ul>
+        <li>Burp Suite (Community)</li>
+        <li>OWASP ZAP</li>
+        <li>Postman for API testing</li>
+        <li>Developer Tools in Browsers</li>
+      </ul>
+    </section>
 
-<!-- LESSON 2 -->
-<section>
-  <h2>Lesson 2: Common Web Vulnerabilities</h2>
+    <section>
+      <h2>Extra Practice & CTF Challenges</h2>
+      <ul>
+        <li><a href="https://tryhackme.com/path/outline/web-fundamentals" target="_blank">TryHackMe Web Path</a></li>
+        <li><a href="https://portswigger.net/web-security" target="_blank">PortSwigger Academy</a></li>
+        <li><a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP Top 10</a></li>
+        <li><a href="https://www.hackthebox.com" target="_blank">HackTheBox Web Challenges</a></li>
+      </ul>
+    </section>
+  </main>
 
-  <h3>🔍 Theory</h3>
-  <ul>
-    <li><strong>XSS:</strong> Malicious scripts injected into pages</li>
-    <li><strong>SQL Injection:</strong> Database manipulation via input fields</li>
-    <li><strong>CSRF:</strong> Trick users into performing unwanted actions</li>
-    <li><strong>Directory Traversal:</strong> Access restricted files</li>
-    <li><strong>File Upload:</strong> Exploit via malicious file uploads</li>
-  </ul>
-
-  <h3>🛠️ Hands-On Labs</h3>
-  <ul>
-    <li><a href="https://portswigger.net/web-security" target="_blank">PortSwigger Academy Labs</a></li>
-    <li><a href="https://tryhackme.com/path/outline/web-fundamentals" target="_blank">TryHackMe: Web Fundamentals</a></li>
-    <li>Practice on <a href="https://owasp.org/www-project-juice-shop/" target="_blank">OWASP Juice Shop</a></li>
-  </ul>
-
-  <h3>⚙️ Tools</h3>
-  <ul>
-    <li>Burp Suite</li>
-    <li>OWASP ZAP</li>
-    <li>SQLMap</li>
-  </ul>
-</section>
-
-<!-- LESSON 3 -->
-<section>
-  <h2>Lesson 3: Hands-on Labs</h2>
-  <p>Apply what you’ve learned in real-world scenarios.</p>
-
-  <ul>
-    <li><strong>TryHackMe:</strong> <a href="https://tryhackme.com/path/outline/web-fundamentals" target="_blank">Web Path</a></li>
-    <li><strong>PortSwigger Labs:</strong> Interactive web exploitation tutorials</li>
-    <li><strong>HackTheBox:</strong> Web exploitation challenges (easy to hard)</li>
-  </ul>
-
-  <p>Tip: Track your progress and keep notes. Hands-on practice builds muscle memory!</p>
-</section>
-
-<!-- LESSON 4 -->
-<section>
-  <h2>Lesson 4: Prevention & Mitigation</h2>
-
-  <h3>🔍 Theory</h3>
-  <ul>
-    <li>Validate and sanitize user input</li>
-    <li>Use security headers: CSP, HSTS, X-Content-Type-Options</li>
-    <li>Use HTTPS with secure cookies</li>
-    <li>Least privilege for users and files</li>
-  </ul>
-
-  <h3>🛠️ Practice</h3>
-  <ul>
-    <li>Secure a sample app using headers</li>
-    <li>Fix insecure login forms in a lab</li>
-  </ul>
-
-  <h3>⚙️ Tools</h3>
-  <ul>
-    <li>Helmet.js (for Express apps)</li>
-    <li>OWASP Cheat Sheets</li>
-  </ul>
-</section>
-
-<!-- LESSON 5 -->
-<section>
-  <h2>Lesson 5: Tools You’ll Use</h2>
-  <ul>
-    <li><strong>Burp Suite:</strong> Web proxy to intercept and test traffic</li>
-    <li><strong>OWASP ZAP:</strong> Open-source vulnerability scanner</li>
-    <li><strong>Postman:</strong> API testing and HTTP requests</li>
-    <li><strong>Browser DevTools:</strong> Inspect page structure, cookies, and JS</li>
-  </ul>
-</section>
-
-<!-- BONUS -->
-<section>
-  <h2>Bonus Resources</h2>
-  <ul>
-    <li><a href="https://owasp.org" target="_blank">OWASP Top 10</a></li>
-    <li><a href="https://portswigger.net/web-security" target="_blank">Burp Suite Academy</a></li>
-    <li><a href="https://tryhackme.com/path/outline/web-fundamentals" target="_blank">TryHackMe Web Path</a></li>
-  </ul>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2025 GhostHacker | Learn. Hack. Secure.</p>
-</footer>
+  <footer>
+    © 2025 GhostHacker | Learn. Hack. Secure.
+  </footer>
 
 </body>
 </html>
